@@ -5,7 +5,8 @@ import 'package:home_controller/settings_screen.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
-    //await SettingsManager().init();
+  WidgetsFlutterBinding.ensureInitialized();
+  SettingsManager().init();
   runApp(const MyApp());
 }
 
